@@ -19,7 +19,7 @@ const Home = () => {
 			case "simple":
 				objectToAdd = addSimple(new Simple(id, title, content));
 				break;
-			case "cumpleaños":
+			case "birthday":
 				objectToAdd = addBirthday(
 					new Birthday(
 						id,
@@ -29,7 +29,7 @@ const Home = () => {
 					)
 				);
 				break;
-			case "boda":
+			case "wedding":
 				objectToAdd = addWedding(
 					new Wedding(
 						id,

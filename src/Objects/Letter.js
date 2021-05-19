@@ -35,10 +35,4 @@ export class Wedding extends Birthday {
 	constructor(id, title, content, image) {
 		super(id, title, content, image);
 	}
-	getImage() {
-		return this.image;
-	}
-	setImage(image) {
-		this.image = image;
-	}
 }

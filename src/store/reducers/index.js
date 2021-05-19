@@ -31,33 +31,13 @@ const reducers = (state = initialState, action) => {
 			};
 
 		case "DELETE_LETTER":
-			console.log(action.payload);
-			switch (action.payload.name) {
-				case "simple":
-					return {
-						letters: {
-							...state.letters,
-							simple: action.payload.newLetters,
-						},
-					};
-				case "birthday":
-					return {
-						letters: {
-							...state.letters,
-							birthday: action.payload.newLetters,
-						},
-					};
-				case "wedding":
-					return {
-						letters: {
-							...state.letters,
-							wedding: action.payload.newLetters,
-						},
-					};
+			return {
+				letters: {
+					...state.letters,
+					[action.payload.name]: action.payload.newLetters,
+				},
+			};
 
-				default:
-					break;
-			}
 		default:
 			return state;
 	}
