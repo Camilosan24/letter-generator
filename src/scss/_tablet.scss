@@ -1,0 +1,41 @@
+@media (min-width: 550px) {
+	.container {
+		nav {
+			padding: 30px;
+			.title {
+				font-size: 25px;
+				text-align: center;
+			}
+		}
+		main {
+			.main-container {
+				flex-wrap: wrap;
+				flex-direction: row;
+				justify-content: center;
+				align-items: flex-start;
+				min-height: 100vh;
+				width: 100%;
+				padding: 0 10px;
+				.letters-container {
+					width: 500px;
+					min-height: 60vh;
+					margin: 10px 20px;
+					h1 {
+						font-size: 1.8em;
+					}
+					.letters {
+						.card {
+							.title-phone {
+								font-size: 1em;
+								text-transform: capitalize;
+								h3 {
+									font-weight: 500;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
